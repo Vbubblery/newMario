@@ -199,7 +199,7 @@ app.get('/api/characters/count', function(req, res, next) {
   });
 });
 app.get('/mario/json', function(req,res,next){
-  res.send({map:[
+  res.send({texture:{1:'Tiles/grassCenter.png',2:'Tiles/grassMid.png',3:'Tiles/grassHalf.png'},map:[
 			[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 			[1,1,2],
 			[1,1,2],
