@@ -197,8 +197,9 @@ app.get('/api/characters/count', function(req, res, next) {
     if (err) return next(err);
     res.send({ count: count });
   });
-});apt.get('/mario/json', function(req,res,next){
-  res.send({map:[1,2,3,4]});
+});
+app.get('/mario/json', function(req,res,next){
+  res.send({map:123});
 });
 /**
  * GET /api/characters/search
