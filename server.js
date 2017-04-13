@@ -209,7 +209,7 @@ app.get('/api/characters/count', function(req, res, next) {
 });
 app.get('/mario/json/:level', function(req,res,next){
 	var data = null;
-	if(req.parmes.level==1){data={texture:{1:'grassCenter.png',2:'grassMid.png',3:'grassHalf.png',5:'liquidWater.png'},map:[
+	if(req.params.level==1){data={texture:{1:'grassCenter.png',2:'grassMid.png',3:'grassHalf.png',5:'liquidWater.png'},map:[
 			[1,1,2],
 			[1,1,2],
 			[1,1,2],
