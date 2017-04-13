@@ -207,9 +207,12 @@ app.get('/api/characters/count', function(req, res, next) {
     res.send({ count: count });
   });
 });
+
 app.get('/mario/json/:level', function(req,res,next){
 	var data = null;
-	if(req.params.level==1){data={texture:{1:'grassCenter.png',2:'grassMid.png',3:'grassHalf.png',5:'liquidWater.png'},map:[
+	if(req.params.level==1){
+		data={texture:{1:'grassCenter.png',2:'grassMid.png',3:'grassHalf.png',5:'liquidWater.png'},
+		      map:[
 			[1,1,2],
 			[1,1,2],
 			[1,1,2],
@@ -262,9 +265,11 @@ app.get('/mario/json/:level', function(req,res,next){
 			[1,1,2],
 			[1,1,2],
 			[1,1,2]
-		]});
-}}
-  res.send(data);
+		]
+		     });
+		 res.send(data);
+}});
+ 
 /**
  * GET /api/characters/search
  * Looks up a character by name. (case-insensitive)
