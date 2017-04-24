@@ -278,7 +278,7 @@ app.get('/mario/json/:level', function(req, res, next) {
         data = {
             texture: {
                 1: 'castleCenter.png',
-                2: 'castlMid.png',
+                2: 'castleMid.png',
                 3: 'castleHalf.png',
                 5: 'spikes.png'
             },
