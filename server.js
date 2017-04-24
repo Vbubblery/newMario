@@ -380,9 +380,9 @@ app.get('/mario/json/:level', function(req, res, next) {
   if (req.params.level == 3) {
         data = {
             texture: {
-                1: 'grassCenter.png',
-                2: 'grassMid.png',
-                3: 'grassHalf.png',
+                1: 'dirtCenter.png',
+                2: 'dirtMid.png',
+                3: 'dirtHalf.png',
                 5: 'liquidWater.png'
             },
             map: [
