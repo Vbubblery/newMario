@@ -280,7 +280,7 @@ app.get('/mario/json/:level', function(req, res, next) {
                 1: 'castleCenter.png',
                 2: 'castlMid.png',
                 3: 'castleHalf.png',
-                5: 'liquidWater.png'
+                5: 'spikes.png'
             },
             map: [
                 [1, 1, 2],
@@ -383,7 +383,7 @@ app.get('/mario/json/:level', function(req, res, next) {
                 1: 'dirtCenter.png',
                 2: 'dirtMid.png',
                 3: 'dirtHalf.png',
-                5: 'liquidWater.png'
+                5: 'bomb.png'
             },
             map: [
                 [1, 1, 2],
